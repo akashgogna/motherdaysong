@@ -1,64 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Best Mom Ever!</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            height: 100vh;
-        }
-        .header {
-            width: 100%;
-            height: 200px;
-            background: #6a1b9a;
-            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
-        }
-        .content {
-            margin-top: -100px;
-            text-align: center;
-        }
-        .album-art {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
-            margin: 15px 0 5px;
-            font-size: 24px;
-            color: #333;
-        }
-        p {
-            margin: 0;
-            color: #777;
-            font-size: 16px;
-        }
-        audio {
-            margin-top: 30px;
-            width: 300px;
-            outline: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Mom Ever!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+
+    .header {
+      width: 100%;
+      height: 200px;
+      background: #6a1b9a;
+      clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    }
+
+    .content {
+      position: relative;
+      z-index: 10;
+      margin-top: -100px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      margin: 15px 0 5px;
+      font-size: 24px;
+    }
+
+    p {
+      margin: 0 0 20px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    audio {
+      width: 300px;
+      margin-top: 10px;
+      outline: none;
+    }
+  </style>
 </head>
 <body>
-    <div class="header"></div>
-    <div class="content">
-        <img src="mom.jpg" alt="Album Art" class="album-art">
-        <h1>Best Mom Ever!</h1>
-        <p>Raman Gogna</p>
-        <audio controls autoplay>
-            <source src="Tu%20Kitni%20Achhi%20Hai%20-%20Raja%20Aur%20Runk%20320%20Kbps.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
+  <div class="header"></div>
+  <div class="content">
+    <img src="mom.jpg" alt="Mom Picture" />
+    <h1>Best Mom Ever!</h1>
+    <p>Raman Gogna</p>
+    <audio controls>
+      <source src="Tu Kitni Achhi Hai - Raja Aur Runk 320 Kbps.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
 </body>
 </html>
